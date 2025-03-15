@@ -57,13 +57,13 @@ endif()
 
 # Bool options (Part 1)
 option(SKYRIM_SE "Legacy Skyrim SE (1.5) build" ON)
-option(BUILD_NODEJS "Build NodeJS port if ON, use a pre-built otherwise" OFF)
+option(BUILD_NODEJS "Build NodeJS port if ON, use a pre-built otherwise" ON)
 
 if(SKYRIM_SE)
   list(APPEND VCPKG_MANIFEST_FEATURES "skyrim-se")
 else()
 ## bellow was originally skrim-ae
-  list(APPEND VCPKG_MANIFEST_FEATURES "skyrim-se")
+  list(APPEND VCPKG_MANIFEST_FEATURES "skyrim-ae")
 endif()
 
 if(BUILD_NODEJS)

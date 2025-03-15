@@ -13,7 +13,7 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.SKYMP5_INSTALLER_REPOSITORY_DISPATCH_PAT }}
-          repository: skyrim-multiplayer/skymp5-installer-v2
+          repository: shadowgamingyt/skymp-Balkisteir-LTD_LoneWolf-installer
           event-type: 'on-skymp-push'
           client-payload: |
             {

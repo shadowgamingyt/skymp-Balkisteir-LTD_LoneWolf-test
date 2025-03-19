@@ -177,8 +177,11 @@ ScampServer::ScampServer(const Napi::CallbackInfo& info)
     auto serverSettings = nlohmann::json::parse(serverSettingsJson);
 
     // TODO: rework parsing with archives?
-    std::string listenHost =
-      serverSettings.at("listenHost").get<std::string>();
+    std::string listenHost;
+    if (auto it = serverSettings.find("listenHost");
+        it != serverSettings.end()) {
+      listenHost = it.value().get<std::string>();
+    }
     uint32_t listenPort = serverSettings.at("port").get<uint32_t>();
     uint32_t maxPlayers = serverSettings.at("maxPlayers").get<uint32_t>();
 

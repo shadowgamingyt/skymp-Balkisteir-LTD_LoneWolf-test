@@ -105,8 +105,7 @@ const main = () => {
       new BlockedAnimationsService(sp, controller),
       new WorldView(sp, controller),
       new KeyboardEventsService(sp, controller),
-      new MagicSyncService(sp, controller),
-      new ProfilingService(sp, controller)
+      new MagicSyncService(sp, controller)
     ];
     SpApiInteractor.setup(listeners);
   }

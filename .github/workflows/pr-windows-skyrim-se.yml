@@ -22,10 +22,6 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
-    - name: Install dependencies
-      run: |
-        choco install opencppcoverage --version=0.9.9.0 --no-progress
-      shell: powershell
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1

@@ -22,15 +22,6 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Clean up Chocolatey directories
-      run: |
-        Remove-Item -Recurse -Force C:\ProgramData\chocolatey\lib-bad -ErrorAction SilentlyContinue
-        Remove-Item -Recurse -Force C:\ProgramData\chocolatey\lib\opencppcoverage -ErrorAction SilentlyContinue
-      shell: powershell
-
     - name: Install dependencies
       run: |
         choco install opencppcoverage --version=0.9.9.0 --no-progress

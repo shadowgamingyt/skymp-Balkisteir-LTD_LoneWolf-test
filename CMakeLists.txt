@@ -57,7 +57,7 @@ endif()
 
 # Bool options (Part 1)
 option(SKYRIM_SE "Legacy Skyrim SE (1.5) build" OFF)
-option(BUILD_NODEJS "Build NodeJS port if ON, use a pre-built otherwise" OFF)
+option(BUILD_NODEJS "Build NodeJS port if ON, use a pre-built otherwise" ON)
 
 if(SKYRIM_SE)
   list(APPEND VCPKG_MANIFEST_FEATURES "skyrim-se")
@@ -87,7 +87,7 @@ option(JS_ENGINE_TRACING_ENABLED "Useful for JsEngine debugging. See JsEngine.h"
 option(PREPARE_NEXUS_ARCHIVES "Prepare SP and other archives during build or not" OFF)
 option(BUILD_UNIT_TESTS "Build unit tests (excluded from build when off - workaround for #1182)" ON)
 option(INSTALL_CLIENT_DIST "Install the client into SKYRIM_DIR after build" OFF)
-option(BUILD_GAMEMODE "Build gamemode" OFF)
+option(BUILD_GAMEMODE "Build gamemode" ON)
 option(BUILD_CLIENT "Build client" ON)
 option(BUILD_FRONT "Build front" ON)
 option(BUILD_SKYRIM_PLATFORM "Build Skyrim Platform" ON)

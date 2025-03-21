@@ -43,9 +43,9 @@ public:
 
   struct NpcSettingsEntry
   {
-    bool spawnInInterior = false;
-    bool spawnInExterior = false;
-    bool overriden = false;
+    bool spawnInInterior = true;
+    bool spawnInExterior = true;
+    bool overriden = true;
   };
 
 public:
@@ -237,12 +237,12 @@ public:
 
   bool isPapyrusHotReloadEnabled = false;
 
-  bool npcEnabled = false;
+  bool npcEnabled = true;
   std::unordered_map<std::string, NpcSettingsEntry> npcSettings;
   NpcSettingsEntry defaultSetting;
-  bool enableConsoleCommandsForAll = false;
+  bool enableConsoleCommandsForAll = true;
 
-  bool disableVanillaScriptsInExterior = true;
+  bool disableVanillaScriptsInExterior = false;
 
   std::vector<uint32_t> bannedEspmCharacterRaceIds = {
     0x000e7713, 0x00012e82, 0x001052a3, 0x00088884, 0x0008883a, 0x00088846,

@@ -57,7 +57,7 @@ endif()
 
 # Bool options (Part 1)
 option(SKYRIM_SE "Legacy Skyrim SE (1.5) build" OFF)
-option(BUILD_NODEJS "Build NodeJS port if ON, use a pre-built otherwise" OFF)
+option(BUILD_NODEJS "Build NodeJS port if ON, use a pre-built otherwise" ON)
 
 if(SKYRIM_SE)
   list(APPEND VCPKG_MANIFEST_FEATURES "skyrim-se")
@@ -91,7 +91,7 @@ option(BUILD_GAMEMODE "Build gamemode" OFF)
 option(BUILD_CLIENT "Build client" ON)
 option(BUILD_FRONT "Build front" ON)
 option(BUILD_SKYRIM_PLATFORM "Build Skyrim Platform" ON)
-option(OFFLINE_MODE "Enable offline mode in generated server settings and client settings" ON)
+option(OFFLINE_MODE "Enable offline mode in generated server settings and client settings" OFF)
 
 message(STATUS JS_ENGINE_TRACING_ENABLED=${JS_ENGINE_TRACING_ENABLED})
 message(STATUS PREPARE_NEXUS_ARCHIVES=${PREPARE_NEXUS_ARCHIVES})

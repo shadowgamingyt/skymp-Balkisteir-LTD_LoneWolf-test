@@ -91,7 +91,7 @@ option(BUILD_GAMEMODE "Build gamemode" OFF)
 option(BUILD_CLIENT "Build client" ON)
 option(BUILD_FRONT "Build front" ON)
 option(BUILD_SKYRIM_PLATFORM "Build Skyrim Platform" ON)
-option(OFFLINE_MODE "Enable offline mode in generated server settings and client settings" OFF)
+option(OFFLINE_MODE "Enable offline mode in generated server settings and client settings" ON)
 
 message(STATUS JS_ENGINE_TRACING_ENABLED=${JS_ENGINE_TRACING_ENABLED})
 message(STATUS PREPARE_NEXUS_ARCHIVES=${PREPARE_NEXUS_ARCHIVES})

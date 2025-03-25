@@ -20,7 +20,7 @@ const getBsaNameByEspmName = (espmName: string) => {
     const nameNoExt = espmName.split(".").slice(0, -1).join(".");
     return nameNoExt + ".bsa";
   }
-  throw new Error(`'${espmName}' is not a valid esp, esm or esl name`);
+  throw new Error(`'${espmName}' is not a valid esp esm or esl name`);
 };
 
 export const generateManifest = (settings: Settings): void => {

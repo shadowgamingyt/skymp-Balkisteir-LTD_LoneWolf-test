@@ -43,9 +43,9 @@ public:
 
   struct NpcSettingsEntry
   {
-    bool spawnInInterior = true;
-    bool spawnInExterior = true;
-    bool overriden = true;
+    bool spawnInInterior = false;
+    bool spawnInExterior = false;
+    bool overriden = false;
   };
 
 public:

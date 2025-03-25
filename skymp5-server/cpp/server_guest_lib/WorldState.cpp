@@ -545,7 +545,7 @@ bool WorldState::AttachEspmRecord(const espm::CombineBrowser& br,
   }
 
   if (isNpc && NpcSourceFilesOverriden()) {
-    bool isInterior = true, isExterior = true,
+    bool isInterior = false, isExterior = false,
          spawnInInterior = defaultSetting.spawnInInterior,
          spawnInExterior = defaultSetting.spawnInExterior;
     espm::LookupResult res = br.LookupById(worldOrCell);

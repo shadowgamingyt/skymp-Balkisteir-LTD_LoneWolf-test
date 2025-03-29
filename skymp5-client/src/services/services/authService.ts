@@ -625,7 +625,7 @@ export class AuthService extends ClientListener {
       return this.authNeededFired && this.browserWindowLoadedFired
     }
   };
-  private discordAuthState = crypto.randomBytes(32).toString('hex');
+  private discordAuthState = "" + Math.random();
   private authDialogOpen = false;
 
   private loggingStartMoment = 0;

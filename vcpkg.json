@@ -18,6 +18,7 @@
     "libzippp",
     "cpptrace",
     "slikenet",
+    "cryptopp",
     {
       "name": "mongo-cxx-driver",
       "platform": "!emscripten"
